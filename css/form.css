@@ -1,0 +1,243 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Microsoft Yahei", "SelaneWebSTTwenty", Georgia, "Times New Roman", Times, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.layout {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+/*nav*/
+
+.fixed {
+    position: fixed;
+    z-index: 10;
+}
+
+.clearfix:after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+.fixed {
+    height: 80px;
+    background: rgb(255, 82, 83);
+    /*border-bottom: 0.5px solid #999;*/
+    box-shadow: 0 1px 3px 5px rgba(0, 0, 0, .4);
+    width: 100%;
+}
+
+.nav-list {
+    float: right;
+}
+
+.nav-list li {
+    float: left;
+    color: #fff;
+}
+
+nav .logo {
+    /*color: #fff;
+	font-size: 46px;*/
+    padding-top: 10px;
+    display: inline-block;
+}
+
+nav .logo img {
+    width: 62px;
+}
+
+.nav-list li a {
+    box-sizing: border-box;
+    color: #fff;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 22px;
+    padding: 10px 8px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-list li a:hover {
+    background: rgb(255, 82, 83);
+    border-radius: 5px;
+}
+
+
+/*header*/
+
+#particles-js {
+    position: absolute;
+    max-height: 300px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 300px;
+    z-index: 2;
+    position: relative;
+}
+
+.title h1 {
+    font-size: 42px;
+    line-height: 2;
+    color: #fff;
+}
+
+.title h5 {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+/*article*/
+
+article {
+    padding: 90px 0;
+}
+
+article .layout .table {
+    font-size: 18px;
+    border-spacing: 5px;
+    margin: 0 auto;
+}
+
+.left {
+    text-align: right;
+    width: 300px;
+    padding-right: 30px;
+    vertical-align: middle;
+}
+
+.layout .table tr {
+    line-height: 4;
+}
+
+td {
+    height: 35px;
+}
+
+.right {
+    float: left;
+    width: 490px;
+    vertical-align: middle;
+}
+
+select {
+    line-height: 2;
+    padding: 0 10px;
+    border: solid 1px #ccc;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-right: 14px;
+    background: url("../images/arrow.png") no-repeat scroll right center transparent;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+textarea {
+    height: 40px;
+    width: 200px;
+    text-indent: 0.5em;
+    text-align: left;
+}
+
+.right input {
+    line-height: 2.5em;
+    border-radius: 10px;
+    border: 1px solid #999;
+    text-indent: 1em;
+}
+
+.button {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: rgb(255, 82, 83);
+    padding: 0.5em 4em;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+.button span {
+    position: relative;
+    pointer-events: none;
+}
+
+.button::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #4405f7, transparent);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: width .2s ease, height .2s ease;
+}
+
+.button:hover::before {
+    --size: 400px;
+}

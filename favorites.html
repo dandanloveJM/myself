@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Favorites!</title>
+
+    <link rel="stylesheet" href="./css/favor.css">
+    <link rel="stylesheet" media="screen" href="css/particle.css">
+    <link rel="stylesheet" href="./css/button.css">
+</head>
+
+<body>
+    <nav class="fixed">
+        <div class="layout clearfix">
+            <a href="#" class="logo iconfont icon-zhentanjianying">
+            <img src="images/emoji-7.png" alt="">
+        </a>
+            <ul class="nav-list clearfix">
+                <li>
+                    <a href="index.html">
+                        <span>主页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="form.html">表单页</a>
+                </li>
+                <li>
+                    <a href="favorites.html">我的爱好</a>
+                </li>
+                <li>
+                    <a href="work.html">我的作品</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <header class="header">
+        <div id="particles-js">
+
+        </div>
+        <div class="title">
+            <h1>My Favorites</h1>
+            <h5>我的爱好</h5>
+        </div>
+    </header>
+    <main>
+        <section class="health">
+            <h1>01我的目标：追求健康生活</h1>
+            <figure>
+
+                <div class="carousel">
+                    <ul class="img-ct clearfix">
+                        <li data-index=0><a href="#"><img src="./images/slider1.jpg" alt=""></a></li>
+                        <li data-index=1><a href="#"><img src="./images/slider2.jpg" alt=""></a></li>
+                        <li data-index=2><a href="#"><img src="./images/slider3.jpg" alt=""></a></li>
+                        <li data-index=3><a href="#"><img src="./images/slider4.jpg" alt=""></a></li>
+                        <li data-index=4><a href="#"><img src="./images/slider5.jpg" alt=""></a></li>
+
+                    </ul>
+                    <a href="javascript:void(0);" class="btn left">&lt;</a>
+                    <a href="javascript:void(0);" class="btn right">&gt;</a>
+                    <div class="bullet-ct">
+                        <ul class="bullet">
+                            <li class="active"><a href="#"><img src="./images/thumb1.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/thumb2.jpg" alt="" ></a></li>
+                            <li><a href="#"><img src="./images/thumb3.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/thumb4.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/thumb5.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </figure>
+        </section>
+        <section class="idol">
+            <h1>02喜欢的风景图片</h1>
+            <h5>图片均从图床上随机获取，每次刷新都不同~</h5>
+            <h5>图片加载需要一点时间，请稍等哦~</h5>
+            <div class="img-container">
+            </div>
+        </section>
+        <section class="books">
+
+            <div class="layout">
+                <table>
+                    <thead>
+                        <caption>
+                            <h1>03喜欢的书籍</h1>
+                        </caption>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="pic">
+                                <div class="border1"></div>
+                                <img class="book-img" src="./images/book01.png" alt="">
+                            </td>
+                            <td >
+                                <h1>You don't know JS</h1>
+                                <h2>中文译为:《你不知道的JS》</h2>
+                                <h5>作者：Kyle Simpson</h5>
+                                <p>很多人对JavaScript这门语言的印象都是简单易学，很容易上手。虽然JavaScript语言本身有很多复杂的概念，但语言的使用者不必深入理解这些概念就可以编写出功能全面的应用。殊不知，这些复杂精妙的概念才是语言的精髓，即使是经验丰富的JavaScript开发人员，如果没有认真学习的话也法真正理解它们。在《图灵程序设计丛书：你不知道的JavaScript（上卷）》中，我们要直面当前JavaScript开发者“不求甚解”的大趋势，深入理解语言内部的机制。</p>
+                               <button class="magic-button">
+                                    <span>click me to read more</span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <h1>CSS揭秘</h1>
+                                <h2>作者：CSS一姐Lea Verou</h2>
+                                <h5>从网页制作CSS到CSS3从入门到精通的大全作品</h5>
+                                <p>
+                                    这是一本注重实践的教程。CSS专家Lea Verou单刀直入，教你用代码解决实际问题。她在书中揭示了47个鲜为人知的CSS技巧，指导中高级CSS开发者循序渐进，探寻更优雅的解决方案，攻克每天都会遇到的各种网页样式难题。读者将在本书中领略作者的缜密思路，并学会用这种思路来应对各种不期而遇的CSS难题，达成DRY、可维护、可扩展、轻量级并且符合标准的结果。本书涵盖的主题如下：背景与边框形状视觉效果字体排印用户体验结构与布局过渡与动画
+                                </p>
+                                <button class="magic-button">
+                                    <span>click me to read more</span>
+                                </button>
+                            </td>
+                            <td class="td2 pic">
+                                <div class="border2"></div>
+                                <img src="./images/book02.png" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td  class="pic">
+                                <div class="border3"></div>
+                                <img src="./images/book03.png" alt="">
+                            </td>
+                            <td >
+                                <h1>请停止无效努力</h1>
+                                <h2>作者：孙圈圈</h2>
+                                <p>
+                                    没有什么天赋异禀，极致源于<strong>持续有效的努力</strong>。停止无效努力，让你的付出有所成就.帮助努力很久依旧没有成功的人，找到正确的努力方向，让人生少走弯路.很多时候，我们不是不努力，只是没找到正确的努力方法。本书从发掘天赋、提升能力、选择平台、回归自己等几大方面详细阐述了努力的正确模式。书里所讲的关于努力的方法与思路可以用来分析我们生活、学习和工作中遇到的大多数问题。
+                                    书中提供的科学以及便于实践的工具与方法。都通过形象生动的思维导图展现出来。结合每篇文章的后续练习好好实践。终将会彻底颠覆一个人过去的思维认知。从而让工作和人生发生巨大的变化。
+                                </p>
+                                <!--<button class="magic-button">
+                                    <span>click me to read more</span>
+                                </button>-->
+                                 <button class="magic-button">
+                                    <span>click me to read more</span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+        
+    </main>
+    <footer class="footer">
+           <p>Copyright © 耿一丹's Website 2018/6</p>
+    </footer>
+</body>
+
+<!-- scripts -->
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<!--<script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function () {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+
+</script>-->
+
+<script>
+    var Carousel = (function () {
+        function _Carousel($ct) {
+            this.$ct = $ct;
+            this.init();
+            this.bind();
+            this.playBullet();
+            this.autoplay();
+        }
+
+        _Carousel.prototype.init = function () {
+            this.$imgCt = this.$ct.find('.img-ct');
+            this.$preBtn = this.$ct.find('.left');
+            this.$nextBtn = this.$ct.find('.right');
+            this.$bullet = this.$ct.find('.bullet');
+            this.$bulletLis = this.$bullet.find('li');
+            this.$imgs = this.$imgCt.find('li');
+            this.clock
+            this.curPageIndex = 0;
+            this.imgWidth = this.$imgs.width();
+            this.imgLength = this.$imgs.length;
+            this.isAnimate = false;
+
+            this.$imgCt.prepend(this.$imgs.last().clone());
+            this.$imgCt.append(this.$imgs.first().clone());
+            this.$imgCt.width(this.imgWidth * (this.imgLength + 2));
+            this.$imgCt.css({ 'left': -this.imgWidth });
+        }
+
+        _Carousel.prototype.bind = function () {
+            var _this = this;
+            this.$preBtn.on('click', function (e) {
+                e.preventDefault();
+                _this.stopAutoplay()
+                _this.playPre(1);
+            })
+            this.$nextBtn.on('click', function (e) {
+                e.preventDefault();
+                _this.stopAutoplay()
+                _this.playNext(1);
+            })
+        }
+
+        _Carousel.prototype.playPre = function (len) {
+            var _this = this;
+
+            if (this.isAnimate) return;
+            this.isAnimate = true;
+            this.$imgCt.animate({ 'left': '+=' + len * _this.imgWidth }, function () {
+                _this.curPageIndex -= len;
+                if (_this.curPageIndex < 0) {
+                    _this.curPageIndex = _this.imgLength - 1;
+                    _this.$imgCt.css('left', -(_this.imgLength * _this.imgWidth));
+                }
+                _this.isAnimate = false;
+                _this.setBullet();
+            })
+        }
+
+        _Carousel.prototype.playNext = function (len) {
+            var _this = this;
+
+            if (this.isAnimate) return;
+            this.isAnimate = true;
+            this.$imgCt.animate({ 'left': '-=' + len * _this.imgWidth }, function () {
+                _this.curPageIndex += len;
+                if (_this.curPageIndex === _this.imgLength) {
+                    _this.$imgCt.css({ 'left': -_this.imgWidth });
+                    _this.curPageIndex = 0;
+                }
+                _this.isAnimate = false;
+                _this.setBullet();
+            })
+        }
+
+        _Carousel.prototype.setBullet = function () {
+            this.$bullet.children()
+                .removeClass('active')
+                .eq(this.curPageIndex)
+                .addClass('active');
+        }
+
+        _Carousel.prototype.playBullet = function () {
+            var _this = this;
+            this.$bulletLis.on('click', function (e) {
+                e.preventDefault();
+                var index = $(this).index();
+                if (index > _this.curPageIndex) {
+                    _this.playNext(index - _this.curPageIndex);
+                } else if (index < _this.curPageIndex) {
+                    _this.playPre(_this.curPageIndex - index);
+                }
+            })
+        }
+
+        _Carousel.prototype.autoplay = function () {
+            var _this = this
+            this.clock = setInterval(function () {
+                _this.playNext(1)
+            }, 3000)
+        }
+
+        _Carousel.prototype.stopAutoplay = function () {
+            clearInterval(this.clock)
+        }
+
+
+        return {
+            init: function ($ct) {
+                $ct.each(function (index, node) {
+                    new _Carousel($(node));
+                })
+            }
+        }
+    })();
+
+    Carousel.init($('.carousel'));
+
+</script>
+<script>
+    function Barrel(container) {
+        this.$container = $(container)
+        this.rowList = []//设立一个空数组，用来保存记录图片的宽度
+        this.loadImg()//加载图片
+    }
+    Barrel.prototype = {
+        getImgURL: function (num) {//获取随机图片
+            var urls = [] //保存图片地址的空数组
+            var height, width
+            for (var i = 0; i < num; i++) {
+                width = Math.floor(Math.random() * 400 + 100)
+                height = 200
+                urls.push("https://unsplash.it/" + width + '/' + height)
+            }
+            return urls
+        },
+        loadImg: function () {//根据得到的图片数据(如url,宽高)创建图片对象
+            var barrel = this //保存this
+            var imgUrls = this.getImgURL(30)
+            //得到了图片的url
+            $.each(imgUrls, function (index, url) {
+                var img = new Image()
+                img.src = url
+                img.onload = function () {//只有当图片加载之后，它的宽高才有意义
+                    var imgInfo = {
+                        target: img,
+                        width: parseInt(200 * (img.width / img.height)),
+                        height: 200
+                    }
+
+                    barrel.render(imgInfo) //根据图片宽高进行排布
+
+                }
+            })
+        },
+        render: function (imgInfo) {
+            var barrel = this
+            var clientWidth = this.$container.width()
+            var rowWidth = 0
+            var ratio
+            var lastImg = imgInfo
+            var marginRight = 8
+            var newRowWidth
+            barrel.rowList.push(imgInfo)
+            $.each(this.rowList, function (index, imgInfo) {
+                rowWidth += imgInfo.width + marginRight
+            })
+            if (rowWidth > clientWidth) {
+                barrel.rowList.pop()
+                var newRowWidth = rowWidth - imgInfo.width
+                ratio = newRowWidth / clientWidth
+                barrel.layout(ratio)
+                barrel.rowList = []
+                barrel.rowList.push(imgInfo)
+            }
+        },
+        layout: function (ratio) {
+            var $rowCt = $('<div class="img-row"></div>')
+            $.each(barrel.rowList, function (index, imgInfo) {
+                var $imgCt = $('<div class="img-box"></div>')
+                var $img = $(imgInfo.target)
+                $img.height(parseInt(200 / ratio))
+                $img.width(parseInt(imgInfo.width / ratio))
+                $imgCt.append($img)
+                $rowCt.append($imgCt)
+            })
+            this.$container.append($rowCt)
+        }
+    }
+    var barrel = new Barrel('.img-container')
+
+</script>
+<script>
+    $('.magic-button').mousemove(function (e) {
+        console.log(11)
+        const x = e.pageX - e.currentTarget.offsetLeft
+        const y = e.pageY -e.currentTarget.offsetTop
+        console.log($(e.target))
+        console.log(x)
+        console.log(y)
+       e.currentTarget.style.setProperty('--x', `${x}px`)
+        e.currentTarget.style.setProperty('--y', `${y}px`)
+    })
+
+</script>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My works!</title>
+
+    <link rel="stylesheet" href="./css/favor.css">
+    <link rel="stylesheet" media="screen" href="css/particle.css">
+    <link rel="stylesheet" href="./css/work.css">
+</head>
+
+<body>
+    <nav class="fixed">
+        <div class="layout clearfix">
+            <a href="#" class="logo iconfont icon-zhentanjianying">
+            <img src="images/emoji-7.png" alt="">
+        </a>
+            <ul class="nav-list clearfix">
+                <li>
+                    <a href="index.html">
+                        <span>主页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="form.html">表单页</a>
+                </li>
+                <li>
+                    <a href="favorites.html">我的爱好</a>
+                </li>
+                <li>
+                    <a href="work.html">我的作品</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <header class="header">
+        <div id="particles-js">
+
+        </div>
+        <div class="title">
+            <h1>My Works</h1>
+            <h5>我的作品</h5>
+        </div>
+    </header>
+    <main>
+        <section class="skill-wrap">
+            <div class="skill-title">
+                <h2>我的技能</h2>
+            </div>
+
+            <div id="skill" class="skill" style="width: 600px;height:400px;"></div>
+            <div class="skill-title">
+                <h2>以下作品均由CSS绘制</h2>
+            </div>
+        </section>
+        <section class="work">
+            <div class="birthday">
+                <div></div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="panda">
+                <div></div>
+            </div>
+        </section>
+        <section class="pikaqiu-wrap">
+            <div class="pikaqiu">
+                 <div id="container">
+                <div id="nose">
+                </div>
+                <div class="eye eye-left"></div>
+                <div class="eye eye-right"></div>
+                <div class="upperLip"></div>
+                <div class="lowerLip-wrapper">
+                    <div class="lowerLip"></div>
+                </div>
+                <div class="face face-left"></div>
+                <div class="face face-right"></div>
+            </div>
+            </div>
+           
+        </section>
+    </main>
+     <footer class="footer">
+           <p>Copyright © 耿一丹's Website 2018/6</p>
+    </footer>
+</body>
+
+</html>
+<!-- scripts -->
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script src="js/echarts.js"></script>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('skill'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            //text: '基础雷达图'
+        },
+        tooltip: {},
+
+        radar: {
+            shape: 'circle',
+            name: {
+                textStyle: {
+                    color: '#000',
+
+                    borderRadius: 3,
+                    padding: [3, 5]
+                }
+            },
+            indicator: [
+                { name: 'HTML5', max: 6500 },
+                { name: 'CSS3', max: 16000 },
+                { name: 'Javascript', max: 30000 },
+                { name: 'node.js', max: 38000 },
+                { name: 'react', max: 52000 },
+
+            ],
+            splitArea: {
+                areaStyle: {
+                    color: ['rgba(114, 172, 209, 0.2)',
+                        'rgba(114, 172, 209, 0.4)', 'rgba(114, 172, 209, 0.3)',
+                        'rgba(114, 172, 209, 0.4)', 'rgba(114, 172, 209, 0.6)'],
+                    shadowColor: 'rgba(0, 0, 0, 0.1)',
+                    shadowBlur: 10
+                }
+            },
+            axisLine: {
+                lineStyle: {
+                    color: 'rgba(255, 255, 255, 0.5)'
+                }
+            },
+        },
+        series: [{
+            name: '技能',
+            type: 'radar',
+
+            data: [
+
+                {
+                    value: [6200, 15000, 25000, 31000, 42000, 21000],
+
+                    lineStyle: {
+                        normal: {
+                            color: 'rgb(255, 82, 83)',
+                        }
+                    }
+                }
+            ]
+        }]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+
+</script>

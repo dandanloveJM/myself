@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主页</title>
+    <link rel="stylesheet" media="screen" href="css/particle.css">
+    <link rel="stylesheet" media="screen" href="css/index.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_693596_s7wzgiop63q2rzfr.css">
+</head>
+
+<body>
+    <nav class="fixed">
+        <div class="layout clearfix">
+            <a href="#" class="logo iconfont icon-zhentanjianying">
+            <img src="images/emoji-7.png" alt="">
+        </a>
+            <ul class="nav-list clearfix">
+                <li>
+                    <a href="#about">关于我</a>
+                </li>
+                <li>
+                    <a href="#favorites">我的爱好</a>
+                </li>
+                <li>
+                    <a href="#story">大学经历</a>
+                </li>
+                <li>
+                    <a href="#more-pages">其他页面</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <header>
+
+        <div class="button">
+            点击红色背景,仔细观察可看到小惊喜哦~
+        </div>
+        <!-- particles.js container -->
+
+        <div id="particles-js">
+        </div>
+        <div class="info-wrap">
+            <div class="name">
+                <h2>Hello I'm </h2>
+                <h1>耿一丹</h1>
+                <h4>我是信管1501班的一名大三学生</h4>
+                <h4>喜欢写前端，热爱生活</h4>
+            </div>
+            <div class="photo">
+
+                <img src="./images/me.png" alt="selfie">
+
+            </div>
+        </div>
+        <div class="border"></div>
+    </header>
+    <main>
+        <section id="about">
+            <div class="wave-img"></div>
+            <canvas id="canvas" style="position:absolute;bottom:0;left:0px;z-index:4;"></canvas>
+            <h1>01 About Me</h1>
+            <div class="layout">
+                <ul class="detail clearfix">
+                    <li>
+                        <img class="about-imgs" src="./images/emoji-29.png" alt="">
+
+                        <h5>爱好美食</h5>
+                        <p class="comment">
+                            喜欢研究和探索各地美食。一粥一饭当思来之不易，一饮一啄饱蘸苦辣酸甜。
+                        </p>
+                    </li>
+                    <li>
+                        <img class="about-imgs" src="./images/emoji-2.png" alt="">
+                        <h5>乐天派</h5>
+                        <p class="comment">
+                            一直以乐观的心态对待每件事。一直向朋友传递正能量。
+                        </p>
+                    </li>
+                    <li>
+                        <img class="about-imgs" src="./images/emoji-25.png" alt="">
+
+                        <h5>热爱旅行</h5>
+                        <p class="comment">
+                            从4岁开始跟随父母全国各地旅游，在旅行中收获意外的惊喜与感动。足迹已踏遍四川、北京、湖北、云南、香港、澳门、新加坡、韩国、马来西亚等
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <section id="favorites">
+            <div class="layout">
+                <div class="title">
+                    <h2>02 Favorite Books and Movies</h2>
+                    <p>喜欢的书籍与电影</p>
+                </div>
+                <ul class="part clearfix">
+                    <li>
+                        <a href="#">
+                            <div class="hover middle">
+                                <span class="logo iconfont icon-favorite"></span>
+                            </div>
+                            <img src="images/book1.jpg" alt="">
+                        </a>
+                        <div class="caption">
+                            <h5>《You don't know JS》</h5>
+                            <p>《你不知道的JS》，作者详细介绍了JavaScript语法知识的前因后果以及各种神奇妙用及其原理</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="hover middle">
+                                <span class="logo iconfont icon-favorite"></span>
+                            </div>
+                            <img src="images/book2.jpg" alt="">
+                        </a>
+                        <div class="caption">
+                            <h5>《CSS揭秘》</h5>
+                            <p>作者是“CSS一姐”，该书详细介绍了CSS各种意想不到的用法</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="hover middle">
+                                <span class="logo iconfont icon-favorite"></span>
+                            </div>
+                            <img src="images/book3.jpg" alt="">
+                        </a>
+                        <div class="caption">
+                            <h5>《请停止无效努力》</h5>
+                            <p>努力固然重要，但找准方向后使用正确的方法去努力更加重要</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="hover middle">
+                                <span class="logo iconfont icon-favorite"></span>
+                            </div>
+                            <img src="images/xmen2.jpg" alt="">
+                        </a>
+                        <div class="caption">
+                            <h5>X-Men: First Class</h5>
+                            <p>《X战警：第一战》改编自《X战警》系列漫画，以美苏大战一触即发作为决战背景，讲述了生于富裕之家的查尔斯·泽维尔（X教授）与在纳粹集中营死里逃生的埃里克·兰谢尔（万磁王）在年轻时的故事。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="hover middle">
+                                <span class="logo iconfont icon-favorite"></span>
+                            </div>
+                            <img src="images/xmen4.jpg" alt="">
+                        </a>
+                        <div class="caption">
+                            <h5>X-Men:Days of Future Past</h5>
+                            <p>《X战警：逆转未来》是2014年上映的超级英雄电影，改编自漫威同名漫画，由二十世纪福克斯公司出品，布莱恩·辛格执导，休·杰克曼、詹姆斯·麦卡沃伊、迈克尔·法斯宾德等人主演。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="hover middle">
+                                <span class="logo iconfont icon-favorite"></span>
+                            </div>
+                            <img src="images/xmen6.jpg" alt="">
+                        </a>
+                        <div class="caption">
+                            <h5>X-Men:Apocalypse</h5>
+                            <p>《X战警：天启》以20世纪80年代为背景，讲述了古老强大的第一个变种人天启在埃及醒来，他想统治并改变这个世界，而引发一系列变种人大战的故事。</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="story">
+            <div class="layout clearfix">
+                <div class="title">
+                    <h2>03 My story in ZUEL</h2>
+                    <p>进入中南财经政法大学的经历</p>
+                </div>
+                <ul class="timeline clearfix">
+                    <li class="clearfix">
+                        <div class="timeline-intro clearfix">
+                            <h5>2015.9.1</h5>
+                            <h5>第一次踏入中南大</h5>
+                            <p>还记得当时妈妈还赌气为什么我不填报四川的大学哈哈哈。爸爸妈妈当时都请假送我到武汉上大学，感觉他们比我都还要激动呢！第一次踏进中南大的校门，映入眼帘的就是文波高高的钟楼，满怀好奇地在校园里闲逛，憧憬着自己将在这里度过的四年时光。也记得爸爸妈妈在离开学校之际，跟我告别时，悄悄流下的眼泪。</p>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="images/emoji-15.png" alt="">
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="timeline-intro clearfix">
+                            <h5>2016.1</h5>
+                            <h5>欢快的大一上学期结束</h5>
+                            <p>这一学期是从高中到大学的一个过渡，我经历了为期一个月的军训、报名加入了团学组织、还加入了院辩论队，认识了很多好朋友。第一次离家这么久，竟也没有感到太难过。还记得自己第一次洗衣服的笨拙、对排队洗澡的不适应、在军训时小心翼翼地与同学打招呼介绍自己、第一次上专业课的好奇和每次接到部门师兄师姐通知的紧张……回想起来，这些都是多么宝贵的回忆啊！</p>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="images/emoji-6.png" alt="">
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="timeline-intro clearfix">
+                            <h5>2016.4</h5>
+                            <h5>充实的大一下</h5>
+                            <p>大一下的专业课比较多，每天的课表都是满满当当的。尤其是王少波老师教的数据结构，学得让人头疼。还记得当时星期三下午第一大节体育课下课后，第二大节是在文泰5楼上数据结构，每个课间都会去西苑买一杯凉爽甜蜜的西瓜牛奶，喝了就充满了幸福感。大一下还申报了大创，很幸运地立项啦~</p>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="images/emoji-1.png" alt="">
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="timeline-intro clearfix">
+                            <h5>2016.12</h5>
+                            <h5>学会做减法的大二上</h5>
+                            <p>大二上我退掉了大一参加的所有组织，终于有独属于自己透透气的时间啦！这一学期第一次参与了评奖学金，记得评上了二等人民奖学金~也是从这一学期开始接触前端学习，我觉得写HTML、CSS、Javascript真是太让人快乐了，它们给我的反馈很快，所写即所得，看着自己的代码变成一个个页面，成就感超强的！</p>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="images/emoji-26.png" alt="">
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="timeline-intro clearfix">
+                            <h5>2017.5</h5>
+                            <h5>痛并快乐的大二下</h5>
+                            <p>转眼间，大学已经过去了一半，我开始思考自己将来该如何发展。这一学期收获最大的是自己报名参加了学院的“中南杯”比赛，这是我第一次自己带队打比赛，中间遇到了很多困难，也几乎濒临崩溃，但在队友的鼓励下都顺利地度过~虽然最终只得到了省三等奖，但是通过参加这个比赛，我学到了如何以问题为导向去学习知识、如何在碰到困难时调整心态等等，比赛使人成长！</p>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="images/emoji-17.png" alt="">
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="timeline-intro clearfix">
+                            <h5>2017.12</h5>
+                            <h5>举棋不定的大三上</h5>
+                            <p>转眼间大一带我们飞的师兄师姐都已经快毕业了，当时听到了很多师兄师姐保研考研成功的故事，很有启发， 由衷地为他们努力之后拥抱成功感到高兴。自己却一直没有定下前进努力的方向，很是迷茫。迷茫之际，跟几位师兄师姐的交流让我收获良多，逐渐找到了自己努力的方向</p>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="images/emoji-14.png" alt="">
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="timeline-intro clearfix">
+                            <h5>2018.6</h5>
+                            <h5>努力奋发的大三下</h5>
+                            <p>这一学期伊始就决定考研，这一学期的课业压力不算大，每天都向着心中的梦想努力奋斗，希望能够离梦想更进一步、再进一步。考研于我而言，最大的困难是如何在没有人监督的情况下，每天都保持良好的学习状态而不去偷懒，同时应该如何调整好自己的心态，劳逸结合。这学期室友有次发烧了，最低38.5度，发烧烧得意志模糊，把我们吓坏了！我陪着她去医院输液，之后渐渐康复。这时我才意识到身体健康的重要性！保持良好心态、坚持锻炼、努力学习、好好加油！</p>
+                        </div>
+                        <div class="timeline-image">
+                            <img src="images/emoji-28.png" alt="">
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                        <div class="timeline-image clearfix">
+                            <div class="middle cleafix">
+                                <p>More Story....</p>
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="more-pages">
+            <canvas id="canvas1" style="position:absolute;bottom:0;left:0px;z-index:4;"></canvas>
+            <div class="layout">
+                <div class="title">
+                    <h2>04 More Pages</h2>
+
+                    <ul class="cast-list clearfix ">
+                        <li>
+                            <a href="./form.html" class="page-wrapper">
+                                <div class="icon-wrapper">
+                                    <span class="iconfont icon-biaodan"></span>
+                                </div>
+
+                                <h3>表单页面</h3>
+                                <p>向我介绍下你自己吧~</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./favorites.html" class="page-wrapper">
+                                <div class="icon-wrapper">
+                                    <span class="iconfont icon-biaoge"></span>
+                                </div>
+
+                                <h3>我的爱好</h3>
+                                <p>向你介绍我的爱好~</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./work.html" class="page-wrapper">
+                                <div class="icon-wrapper">
+                                    <span class="iconfont icon-tupian"></span>
+                                </div>
+
+                                <h3>我的作品</h3>
+                                <p>用CSS画画~</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright © 耿一丹's Website 2018/6</p>
+    </footer>
+
+</body>
+
+<!-- scripts -->
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+    var count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles = document.querySelector('.js-count-particles');
+    update = function () {
+        stats.begin();
+        stats.end();
+        if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+            count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        }
+        requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);
+
+</script>
+<script type="text/javascript">
+    var canvas = document.getElementById('canvas');
+    var ctx = canvas.getContext('2d');
+    //canvas.width = $('.about').width();
+    //console.log(canvas.width)
+    canvas.width = canvas.parentNode.offsetWidth;
+    canvas.height = canvas.parentNode.offsetHeight;
+    //如果浏览器支持requestAnimFrame则使用requestAnimFrame否则使用setTimeout  
+    window.requestAnimFrame = (function () {
+        return window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            function (callback) {
+                window.setTimeout(callback, 1000 / 60);
+            };
+    })();
+    // 波浪大小
+    var boHeight = canvas.height / 20;
+    var posHeight = canvas.height / 1.2;
+    //初始角度为0  
+    var step = 0;
+    //定义1条不同波浪的颜色  
+    var lines = ["rgb(255, 83, 83)", "rgba(255, 83, 83,.7)"];
+    function loop() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        step++;
+        //画3个不同颜色的矩形  
+        for (var j = lines.length - 1; j >= 0; j--) {
+            ctx.fillStyle = lines[j];
+            //每个矩形的角度都不同，每个之间相差45度  
+            var angle = (step + j * 150) * Math.PI / 180;
+            var deltaHeight = Math.sin(angle) * boHeight;
+            var deltaHeightRight = Math.cos(angle) * boHeight;
+            ctx.beginPath();
+            ctx.moveTo(0, posHeight + deltaHeight);
+            ctx.bezierCurveTo(canvas.width / 2, posHeight + deltaHeight - boHeight, canvas.width / 2, posHeight + deltaHeightRight - boHeight, canvas.width, posHeight + deltaHeightRight);
+            ctx.lineTo(canvas.width, canvas.height);
+            ctx.lineTo(0, canvas.height);
+            ctx.lineTo(0, posHeight + deltaHeight);
+            ctx.closePath();
+            ctx.fill();
+        }
+        requestAnimFrame(loop);
+    }
+    loop();
+
+</script>
+
+</html>
