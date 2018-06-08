@@ -129,6 +129,9 @@
      clear: both;
  }
  
+ .health {
+     padding: 70px 0;
+ }
  .carousel {
      max-width: 700px;
      max-height: 600px;
@@ -207,10 +210,12 @@
  main .idol {
      text-align: center;
  }
- 
+ .health {
+     padding: 70px 0;
+ }
  main h1 {
      font-size: 42px;
-     line-height: 2;
+     line-height: 2.5;
      color: rgb(255, 82, 83);
  }
  /* idol*/
