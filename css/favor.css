@@ -131,7 +131,7 @@
  
  .carousel {
      max-width: 700px;
-     max-height: 465px;
+     max-height: 600px;
      position: relative;
      overflow: hidden;
      margin: 0 auto;
@@ -179,7 +179,7 @@
  
  .carousel .bullet-ct {
      position: absolute;
-     bottom: 56px;
+     bottom: 35px;
      left: 0;
      right: 0;
      text-align: center;
