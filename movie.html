@@ -308,11 +308,15 @@
 
 </script>
 <script>
-    waterfull()
+    $(document).ready(function(){  
+      waterfull()  
+});  
+  
     $(window).on('resize', function () {
         waterfull()
     })
     function waterfull() {
+        console.log('1')
         var columnLength = parseInt($('.container').width() / $('.item').width())
         var itemArr = []
         for (var i = 0; i < columnLength; i++) {
