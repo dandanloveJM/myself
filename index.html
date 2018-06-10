@@ -28,6 +28,9 @@
                     <a href="#story">大学经历</a>
                 </li>
                 <li>
+                    <a href="#hello">向我留言</a>
+                </li>
+                <li>
                     <a href="#more-pages">其他页面</a>
                 </li>
 
@@ -262,47 +265,129 @@
                 </ul>
             </div>
         </section>
-        <section id="more-pages">
-            <canvas id="canvas1" style="position:absolute;bottom:0;left:0px;z-index:4;"></canvas>
-            <div class="layout">
-                <div class="title">
-                    <h2>04 More Pages</h2>
-
-                    <ul class="cast-list clearfix ">
-                        <li>
-                            <a href="./form.html" class="page-wrapper">
-                                <div class="icon-wrapper">
-                                    <span class="iconfont icon-biaodan"></span>
-                                </div>
-
-                                <h3>表单页面</h3>
-                                <p>向我介绍下你自己吧~</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./favorites.html" class="page-wrapper">
-                                <div class="icon-wrapper">
-                                    <span class="iconfont icon-biaoge"></span>
-                                </div>
-
-                                <h3>我的爱好</h3>
-                                <p>向你介绍我的爱好~</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="./work.html" class="page-wrapper">
-                                <div class="icon-wrapper">
-                                    <span class="iconfont icon-tupian"></span>
-                                </div>
-
-                                <h3>我的作品</h3>
-                                <p>用CSS画画~</p>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
+        <section id="hello">
+            <div class="title">
+                <h2>04 Say Hello</h2>
             </div>
+            <table class="table">
+                <form action="">
+
+                    <tbody>
+                        <tr>
+                            <td class="left">你的名字</td>
+                            <td class="right">
+                                <input type="text" id="user" name="user" value="" /> &nbsp;*
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="left">你的生日</td>
+                            <td class="right">
+                                <input type="date" />
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="left">你的地址</td>
+                            <td class="right">
+                                <input type="text" value="" name="address" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="left">你的E-mail</td>
+                            <td class="right">
+
+                                <input type="text" id="email" value="" name="e-mail" />
+
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td class="left">你周末喜欢做什么呢</td>
+                            <td class="right">
+                                <input type="checkbox" name="read" value="read" />读一本书
+                                <input type="checkbox" name="swim" value="swim" />到游泳馆游泳
+                                <input type="checkbox" name="travel" value="travel" />来一次旅行
+                                <input type="checkbox" name="movie" value="movie" />看一场电影
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="left">向我留言吧~</td>
+                            <td class="right right-liuyan">
+                                <textarea name="bz"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="left"></td>
+                            <td class="right">
+                                <button class="button">
+                                    <span>提交</span>
+                                    
+                                </button>
+                               
+                                <!--<input type="submit" value="提交" id="submit" name="submit"  />-->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left"></td>
+                            <td class="right">hover按钮有特效哦~</td>
+                        </tr>
+
+
+                    </tbody>
+                </form>
+
+            </table>
+
+
+
+        </section>
+        <section id="more-pages">
+
+
+            <div class="title">
+                <h2>05 More Pages</h2>
+            </div>
+            <ul class="cast-list ">
+                <li>
+                    <a href="./movie.html" class="page-wrapper">
+                        <div class="icon-wrapper">
+                            <span class="iconfont icon-biaodan"></span>
+                        </div>
+
+                        <h3>电影推荐</h3>
+                        <p>喜欢的电影介绍</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./favorites.html" class="page-wrapper">
+                        <div class="icon-wrapper">
+                            <span class="iconfont icon-biaoge"></span>
+                        </div>
+
+                        <h3>我的爱好</h3>
+                        <p>向你介绍我的爱好~</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./work.html" class="page-wrapper">
+                        <div class="icon-wrapper">
+                            <span class="iconfont icon-tupian"></span>
+                        </div>
+
+                        <h3>我的作品</h3>
+                        <p>我可以用CSS画画~</p>
+                    </a>
+                </li>
+
+            </ul>
+
+
         </section>
 
     </main>
@@ -384,6 +469,18 @@
         requestAnimFrame(loop);
     }
     loop();
+
+</script>
+
+<script>
+    $('.button').mousemove(function (e) {
+        console.log(11)
+        const x = e.pageX - e.target.offsetLeft
+        const y = e.pageY - e.target.offsetTop
+        console.log($(e.target))
+        e.target.style.setProperty('--x', `${x}px`)
+        e.target.style.setProperty('--y', `${y}px`)
+    })
 
 </script>
 

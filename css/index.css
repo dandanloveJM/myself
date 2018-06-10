@@ -414,11 +414,13 @@ section .title h2 {
 
 /*more pages*/
 
-#more-pages {
-    margin-top: 170px;
-    background: #f7f7f7;
+#more-pages{
+    background: #fff;
     padding-bottom: 70px;
-    max-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #more-pages .cast-list {
@@ -428,7 +430,7 @@ section .title h2 {
 }
 
 #more-pages .cast-list>li {
-    width: 30%;
+   
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -536,6 +538,117 @@ section .title h2 {
     line-height: 50px;
     display: inline-block;
     margin-left: 15px;
+}
+
+/*表单*/
+/*article*/
+
+/*article {
+    padding: 90px 0;
+}*/
+#hello {
+      background: #f7f7f7;
+      padding-bottom: 70px;
+      padding-top: 30px
+}
+.table {
+    font-size: 18px;
+    border-spacing: 5px;
+    margin: 0 auto;
+}
+
+.left {
+    text-align: right;
+    width: 300px;
+    padding-right: 30px;
+    vertical-align: middle;
+}
+
+.table tr {
+    line-height: 4;
+}
+
+td {
+    height: 35px;
+}
+
+.right {
+    float: left;
+    width: 490px;
+    vertical-align: middle;
+}
+
+select {
+    line-height: 2;
+    padding: 0 10px;
+    border: solid 1px #ccc;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding-right: 14px;
+    background: url("../images/arrow.png") no-repeat scroll right center transparent;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+textarea {
+    height: 100px;
+    width: 250px;
+    text-indent: 0.5em;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.right input {
+    line-height: 2.5em;
+    border-radius: 10px;
+    border: 1px solid #999;
+    text-indent: 1em;
+}
+
+.right-liuyan {
+    height: 150px;
+}
+
+.button {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: rgb(255, 82, 83);
+    padding: 0.5em 4em;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    border-radius: 100px;
+}
+
+.button span {
+    position: relative;
+    pointer-events: none;
+}
+
+.button::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #4405f7, transparent);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: width .2s ease, height .2s ease;
+}
+
+.button:hover::before {
+    --size: 400px;
 }
 
 footer {

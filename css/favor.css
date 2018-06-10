@@ -134,7 +134,7 @@
  }
  .carousel {
      max-width: 700px;
-     max-height: 600px;
+     min-height: 600px;
      position: relative;
      overflow: hidden;
      margin: 0 auto;

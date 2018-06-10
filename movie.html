@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>电影页</title>
+    <link rel="stylesheet" href="./css/movie.css">
+    <link rel="stylesheet" media="screen" href="css/particle.css">
+</head>
+
+<body>
+    <nav class="fixed">
+        <div class="layout clearfix">
+            <a href="#" class="logo iconfont icon-zhentanjianying">
+            <img src="images/emoji-7.png" alt="">
+        </a>
+            <ul class="nav-list clearfix">
+                <li>
+                    <a href="index.html">
+                        <span>主页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="movie.html">电影推荐</a>
+                </li>
+                <li>
+                    <a href="favorites.html">我的爱好</a>
+                </li>
+                <li>
+                    <a href="work.html">我的作品</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <header class="header">
+        <div id="particles-js">
+
+        </div>
+        <div class="header-title">
+            <h1>电影推荐</h1>
+            <h5>一些喜欢的电影~</h5>
+        </div>
+    </header>
+    <main>
+        <section class="poster">
+
+            <figure>
+
+                <div class="carousel">
+                    <ul class="img-ct clearfix">
+                        <li data-index=0><a href="#"><img src="./images/movie1.jpg" alt=""></a></li>
+                        <li data-index=1><a href="#"><img src="./images/movie2.jpg" alt=""></a></li>
+                        <li data-index=2><a href="#"><img src="./images/movie3.jpg" alt=""></a></li>
+                        <li data-index=3><a href="#"><img src="./images/movie4.jpg" alt=""></a></li>
+                        <li data-index=4><a href="#"><img src="./images/movie5.jpg" alt=""></a></li>
+
+                    </ul>
+                    <a href="javascript:void(0);" class="btn left">&lt;</a>
+                    <a href="javascript:void(0);" class="btn right">&gt;</a>
+                    <div class="bullet-ct">
+                        <ul class="bullet">
+                            <li class="active"><a href="#"><img src="./images/moviethumb1.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/moviethumb2.jpg" alt="" ></a></li>
+                            <li><a href="#"><img src="./images/moviethumb3.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/moviethumb4.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/moviethumb5.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </figure>
+        </section>
+        <section class="movie-figure">
+            <div class="title">
+                <h2>喜欢的电影人物</h2>
+            </div>
+            <div class="container">
+                <div class="item">
+                    <img src="./images/m1.jpg" alt="">
+                </div>
+                <div class="item ">
+                    <img src="./images/m2.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/m3.jpg" alt="">
+                </div>
+                <div class="item ">
+                    <img src="./images/m10.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/m5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="./images/m6.jpg" alt="">
+                </div>
+                <div class="item">
+                     <img src="./images/m7.jpg" alt="">
+                </div>
+                <div class="item">
+                     <img src="./images/m8.jpg" alt="">
+                </div>
+                <div class="item">
+                     <img src="./images/m9.png" alt="">
+                </div>
+               
+                
+            </div>
+        </section>
+        <section class="review">
+            <div class="title">
+                <h2>影评人说</h2>
+
+            </div>
+             <div class="layout">
+                <table>
+                    
+                    <tbody>
+                        <tr>
+                            <td class="pic">
+                                <div class="border1"></div>
+                                <img class="book-img" src="./images/r1.jpg" alt="">
+                            </td>
+                            <td class="quote" >
+                                
+                                <h1>X战警:第一站</h1>
+                              
+                                <p> 
+                                剧本编写得相当不错，主要角色的起源交代得很清楚，特效场面虽然不多但效果很震撼，其中法斯宾德的万磁王气场最为强大，人物角色性格设置也最为丰满，同时故事节奏控制得十分出色，松紧有弛又略带幽默，而最重要的是其扎实的剧本，与以前单纯追逐视觉奇观的超级英雄电影不同，其更多的是表现变种人在人类社会中的复杂认知到寻找自我的辨识与选择过程，接合恰到好处的美苏冷战的时代背景设定，<strong>一部精彩纷呈的变种人电影</strong>,带来了非常愉悦的观影体验。
+                             
+                                </p>
+                       
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="quote">
+                                <h1>疯狂动物城</h1>
+                               
+                                <p>
+                                    《疯狂动物城》强调并突出了“反差”这一元素。从在人高马大的动物警官同事们中弱不禁风的朱迪兔，到名为“闪电”动作却比乌龟还要慢的办事员树懒，再到威风八面本尊却小巧玲珑的黑帮老大鼹鼠。反差在影片中处处出现，不仅挑战着观众的认知，更巧妙地制造着笑点。最后，最大的反差出现在了幕后黑手的真实身份上。就当我们下意识地认为并相信面目凶残，性格暴戾的动物会是天生的坏蛋代言人时，影片用剧情的反转告诉并提醒了我们：强者与弱者和善恶之间是没有必然联系的。即便身为弱小者，用最大的恶意去揣测相对强大者也是错误的，更是没有道理的。
+                                </p>
+                               
+                            </td>
+                            <td class="td2 pic">
+                                <div class="border2"></div>
+                                <img src="./images/r2.jpg" alt="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td  class="pic">
+                                <div class="border3"></div>
+                                <img src="./images/r3.jpg" alt="">
+                            </td>
+                            <td class="quote">
+                                <h1>复仇者联盟3</h1>
+                               
+                               <p>《复仇者联盟3：无限战争》是难得的，以不断低落作为剧情走势的超级英雄电影，为了符合悲剧性的基调，影片大量压缩了漫威式笑点，只是在几处留下了合家欢的套路痕迹。这让影片整个基调显得不够统一，你能清晰感觉导演在不断找平衡，笼络更多的观众，满足大多数人的类型期待。《复仇者联盟3：无限战争》整体观感显得非常保守，不敢突出的太多，更不敢完全改变调性，加上继续挖坑的结局，始终让人意犹未尽，总之是，算计大于新意。</p>
+                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="quote">
+                                <h1>爱乐之城</h1>
+                               <p>
+                                   这部电影，故事好，情感好，音乐好，氛围好，表演好，服装、色彩、灯光、摄影都好，比如故事：影片用春、夏、秋、冬来分章节叙事，不仅线索分明，情感也表现得更为贴切。男女主人公所经历的情感变化，就像四季那样，有萌动，有热烈，有凋零，也有冷寂。相对来讲，《爱乐之城》的故事很简单，两个有梦的男女青年，因为梦想走到一起，又因为各自的梦想而分离。
+                               </p>
+                               
+                            </td>
+                            <td class="td2 pic">
+                                <div class="border2"></div>
+                                <img src="./images/r4.jpg" alt="">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+<footer class="footer">
+           <p>Copyright © 耿一丹's Website 2018/6</p>
+    </footer>
+</body>
+
+</html>
+<!-- scripts -->
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script>
+    var Carousel = (function () {
+        function _Carousel($ct) {
+            this.$ct = $ct;
+            this.init();
+            this.bind();
+            this.playBullet();
+            this.autoplay();
+        }
+
+        _Carousel.prototype.init = function () {
+            this.$imgCt = this.$ct.find('.img-ct');
+            this.$preBtn = this.$ct.find('.left');
+            this.$nextBtn = this.$ct.find('.right');
+            this.$bullet = this.$ct.find('.bullet');
+            this.$bulletLis = this.$bullet.find('li');
+            this.$imgs = this.$imgCt.find('li');
+            this.clock
+            this.curPageIndex = 0;
+            this.imgWidth = this.$imgs.width();
+            this.imgLength = this.$imgs.length;
+            this.isAnimate = false;
+
+            this.$imgCt.prepend(this.$imgs.last().clone());
+            this.$imgCt.append(this.$imgs.first().clone());
+            this.$imgCt.width(this.imgWidth * (this.imgLength + 2));
+            this.$imgCt.css({ 'left': -this.imgWidth });
+        }
+
+        _Carousel.prototype.bind = function () {
+            var _this = this;
+            this.$preBtn.on('click', function (e) {
+                e.preventDefault();
+                _this.stopAutoplay()
+                _this.playPre(1);
+            })
+            this.$nextBtn.on('click', function (e) {
+                e.preventDefault();
+                _this.stopAutoplay()
+                _this.playNext(1);
+            })
+        }
+
+        _Carousel.prototype.playPre = function (len) {
+            var _this = this;
+
+            if (this.isAnimate) return;
+            this.isAnimate = true;
+            this.$imgCt.animate({ 'left': '+=' + len * _this.imgWidth }, function () {
+                _this.curPageIndex -= len;
+                if (_this.curPageIndex < 0) {
+                    _this.curPageIndex = _this.imgLength - 1;
+                    _this.$imgCt.css('left', -(_this.imgLength * _this.imgWidth));
+                }
+                _this.isAnimate = false;
+                _this.setBullet();
+            })
+        }
+
+        _Carousel.prototype.playNext = function (len) {
+            var _this = this;
+
+            if (this.isAnimate) return;
+            this.isAnimate = true;
+            this.$imgCt.animate({ 'left': '-=' + len * _this.imgWidth }, function () {
+                _this.curPageIndex += len;
+                if (_this.curPageIndex === _this.imgLength) {
+                    _this.$imgCt.css({ 'left': -_this.imgWidth });
+                    _this.curPageIndex = 0;
+                }
+                _this.isAnimate = false;
+                _this.setBullet();
+            })
+        }
+
+        _Carousel.prototype.setBullet = function () {
+            this.$bullet.children()
+                .removeClass('active')
+                .eq(this.curPageIndex)
+                .addClass('active');
+        }
+
+        _Carousel.prototype.playBullet = function () {
+            var _this = this;
+            this.$bulletLis.on('click', function (e) {
+                e.preventDefault();
+                var index = $(this).index();
+                if (index > _this.curPageIndex) {
+                    _this.playNext(index - _this.curPageIndex);
+                } else if (index < _this.curPageIndex) {
+                    _this.playPre(_this.curPageIndex - index);
+                }
+            })
+        }
+
+        _Carousel.prototype.autoplay = function () {
+            var _this = this
+            this.clock = setInterval(function () {
+                _this.playNext(1)
+            }, 3000)
+        }
+
+        _Carousel.prototype.stopAutoplay = function () {
+            clearInterval(this.clock)
+        }
+
+
+        return {
+            init: function ($ct) {
+                $ct.each(function (index, node) {
+                    new _Carousel($(node));
+                })
+            }
+        }
+    })();
+
+    Carousel.init($('.carousel'));
+
+</script>
+<script>
+    waterfull()
+    $(window).on('resize', function () {
+        waterfull()
+    })
+    function waterfull() {
+        var columnLength = parseInt($('.container').width() / $('.item').width())
+        var itemArr = []
+        for (var i = 0; i < columnLength; i++) {
+            itemArr[i] = 0
+        }
+        //对于每一个item,找到高度的最小值
+        $('.item').each(function () {
+            var minValue = Math.min.apply(null, itemArr)
+            console.log(minValue)
+            var minIndex = itemArr.indexOf(minValue)
+            console.log(minIndex)
+            $(this).css({
+                top: itemArr[minIndex],
+                left: $(this).outerWidth(true) * minIndex
+            })
+            itemArr[minIndex] += $(this).outerHeight(true)
+        })
+    }
+</script>
